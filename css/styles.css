@@ -1,0 +1,53 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+  .skill-icon {
+    font-size: 100px;
+    padding: 30px;
+  }
+
+  .typescript-image {
+    width: 160px;
+    height: 160px;
+    padding: 30px;
+  }
+
+  .scala-image{
+    /* width: 100px; */
+    height: 100px;
+    padding: 20px 10px;
+    margin: 30px;
+    background-color:#212529;
+  }
+
+  .jquery-image {
+    height: 100px;
+  }
+
+  .tomcat-image {
+    height: 100px;
+  }
