@@ -61,9 +61,45 @@ html {
   }
 
   .container{
-    padding-top: 70px;
+    padding-top: 145px;
   }
 
   nav a {
     white-space: nowrap;
   }
+
+  .appbutton {
+    width: 60%;
+    margin: auto;
+}
+
+  .row-headings {
+    border-width: 0 0 6px  0;
+    border-color: #f0f0f0;
+    border-style: solid;
+  }
+
+  .rows {
+    border-width: 0 0 3px  0;
+    border-color: #f0f0f0;
+    border-style: solid;
+  }
+
+  .contact-icon {
+    font-size: 60px;
+  }
+
+  footer {
+    padding-bottom: 100px;
+  }
+
+  /* .lead {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  } */
