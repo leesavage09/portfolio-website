@@ -115,255 +115,242 @@
       <p class="lead">With the freedom to follow my ideas, I often find myself getting lost in procedural art, Or
         building something with both hardware and software components. I consider myself a hard-working learner. I am
         proud to have finished many feature compleat peases of work. These are a few of my favourite projects.</p>
-      <div class="card-deck mb-3 text-center">
+      <div class="card-deck mb-3 text-left">
         <div class="card mb-6 box-shadow">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Fractic</h4>
           </div>
           <div class="card-body">
             <p>
-              My most significant work. This is a feature-complete Progressive Web App and Android app. See the Project
-              page for more information.
+              This full-featured Progressive web and was built in Ionic and exported to Google play app store. It can be
+              run in a wide range of browsers and on Android devices from SDK version 19.
             </p>
+            <p>
+              Some of the most prominent challenges were.
+            </p>
+            <ul>
+              <li>Making sure cross-browser compatibility is handled well particularly with IOS. Graceful fails for
+                unimplemented native features in both Chrome Safari and Firefox. Significant workarounds for
+                Safari were required.
+              </li>
+              <li>Consistently handling all types of input from touch gestures, mouse, scroll wheel, double clicks.
+              </li>
+              <li>WebGL with graceful fallback to javascript canvas. Passing data to shaders and ensuring the WEBGL
+                algorithm matched the CPU javascript algorithms.
+              </li>
+              <li>Studding CSS and SASS to ensure a wide range of browsers were supported.
+              </li>
+              <li>Server-side PHP code to enable sharing and saving of Fractals, using rich link metadata.
+              </li>
+              <li>Custom made UI built in HTML and SASS, providing unique solutions such as the colour stop gradient and
+                histogram tool.</li>
+            </ul>
             <a href="https://fractic.leesavage.co.uk" type="button" class="btn btn-lg btn-outline-primary">Web app</a>
-            <br>
             <a
               href='https://play.google.com/store/apps/details?id=uk.co.leesavage.fractic&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
                 width="170px" alt='Get it on Google Play'
                 src='https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png' /></a>
           </div>
         </div>
+      </div>
+      <div class="card-deck mb-3 text-left">
         <div class="card mb-6 box-shadow">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Javascript Trees</h4>
           </div>
           <div class="card-body">
-            <p>A current project. An experiment with the idea of procedural generation of trees. Initially inspired by
-              fractal trees, I am keen to see how I can improve the algorithm to create trees or plants found in nature.
+            <p>My first React app. This is an experiment with the idea of procedural generation of trees. Create trees
+              or plants similar to those found in nature using a simple algorithm.
             </p>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Web page</button>
+            <a href='https://trees.leesavage.co.uk' type="button" class="btn btn-lg btn-outline-primary">Web App</a>
           </div>
         </div>
       </div>
 
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Arduino mood lights</h4>
-          </div>
-          <div class="card-body">
-            <p>A fun project. An Arduino connected to a custom-built PCB to control an RGB led strip. The Arduino uses a
-              simple Http server to respond to requests by a remote client to change the lighting. The client software
-              running on a PC reads screen data and decides what the dominant colour should be and messages the Arduino.
-              This functions as movie mood lighting running at around 10-20fps.</p>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Raspberry Pi Foscam recorder</h4>
-          </div>
-          <div class="card-body">
-            <p>
-              This project was a combination of hardware-software. A Raspberry PI connected to a Came security gate PCB,
-              and an IR sensor would know when objects passed through the gates. The raspberry pi would then query a NAS
-              server that would be running a server program also written in python with the time of the event.
-              The software on the NAS would constantly be buffering video into memory from a Foscam security camera and
-              on
-              receiving the request from the raspberry Pi would compile a jpeg video from historical memory and email it
-              to me. A web server on the Raspberry PI would allow me to open, close, lock or unlock the security gates.
-              I
-              would also receive email notifications if the gates were left open after a specific time of day.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Java Fractals</h4>
-          </div>
-          <div class="card-body">
-            <p>Fractals have interested me for a long time. This Mandelbrot set explorer is a relatively compleat early
-              experement. Built-in Java with a Swing UI </p>
+
+      <div id="commercial_projects" class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2 class="display-4">Commercial projects</h2>
+        <p class="lead">I consider myself an amateur developer with a few commercial projects. Apos being the big one
+          for
+          my business and some smaller websites for friends and family. I look forward to learning to work as part of a
+          larger team as a professional developer.</p>
+        <div class="card-deck mb-3 text-left">
+
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">APOS</h4>
+            </div>
+            <div class="card-body">
+              <p>
+                This was the first feature-complete application I created. An Electronic Point Of Sale system for my
+                business Apache. Built-in Java with a Swin UI and ORM using Hibernate to an embedded Derby database.
+                Featuring a front end for a touch screen interaction, Hardware support for cash drawer and receipt
+                printing.
+                The back end built for mouse and keyboard.
+              </p>
+              <p>Features include</p>
+              <ul>
+                <li>Staff hour tracking</li>
+                <li>Products by catagory, department, size colour and other searchable metrics.</li>
+                <li>VAT and financial reports</li>
+                <li>Security levels</li>
+                <li>Audit Trails</li>
+                <li>Product and sales reporting</li>
+                <li>End of day reporting</li>
+                <li>Cash reconciliation.</li>
+                <li>All other basic features you would expect from an EPOS system.</li>
+              </ul>
+
+              <img src="/assets/apos.jpeg" width="100%"/>
+
+            </div>
           </div>
         </div>
 
+        <div class="card-deck mb-3 text-left">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">LabourInVain.co.uk</h4>
+            </div>
+            <div class="card-body">
+              <p>This is a static website with no CMS. It is built from a bootstrap theme that has been heavily
+                customised
+                with some new Javascript.</p>
+              <a type="button" href="http://www.labourinvainstivesholiday.co.uk/"
+                class="btn btn-lg btn-block btn-primary">Goto Site</a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">dsbates.com</h4>
+            </div>
+            <div class="card-body">
+              <p>I created a custom bootstrap theme for this WordPress site. One feature is that the entire site is a
+                one-page design. Some "pages" are dynamically hidden and revealed by the menu to give the appearance of
+                a
+                fast multi-page website. I created animations to help with the transitions between pages. Some simple
+                Javascript at the end of the page source controls this. I used PHP code in the theme to add extra
+                functionality to the back end CMS.</p>
+              <a href="http://dsbates.com/" type="button" class="btn btn-lg btn-block btn-primary">Go To Site</a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Java database application</h4>
+            </div>
+            <div class="card-body">
+              <p>Built for a small business, a customer database to manage direct mail campaigns — Built-In Java with a
+                Swin
+                UI and Object-relational mapping using Hibernate to interface with an embedded Derby SQL database. The
+                main
+                features were customisable mail merges based on specific customer information and other time-sensitive
+                events.</p>
+            </div>
+          </div>
+        </div>
 
       </div>
 
+
+      <!--Education-->
+      <div id="education" class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Education</h1>
+        <p class="lead">
+          I am a passionate self-taught Developer. Mostly i undertake selflearning but have compleated a few online
+          courses.
+        </p>
+        <div class="row row-headings">
+
+          <div class="col-2">
+            <h5>Date</h5>
+          </div>
+          <div class="col-8">
+            <h5>School</h5>
+          </div>
+          <div class="col-2">
+            <h5>Grade</h5>
+          </div>
+        </div>
+
+        <div class="row rows">
+          <div class="col-2">
+            August 12, 2014<br>
+          </div>
+          <div class="col-8">
+            Principles of Computing<br>
+            Rice University
+          </div>
+          <div class="col-2">
+            Grade: 97.9% with Distinction
+          </div>
+        </div>
+
+        <div class="row rows">
+          <div class="col-2">
+            July 16, 2014<br>
+          </div>
+          <div class="col-8">
+            Functional Programming Principles in Scala<br>
+            École Polytechnique Fédérale de Lausanne
+          </div>
+          <div class="col-2">
+            Grade: 100% with Distinction
+          </div>
+        </div>
+
+        <div class="row rows">
+          <div class="col-2">
+            April 18, 2014<br>
+          </div>
+          <div class="col-8">
+            Computer Networks<br>
+            University of Washington
+          </div>
+          <div class="col-2">
+            Grade: 91.3%
+          </div>
+        </div>
+
+        <div class="row rows">
+          <div class="col-2">
+            January 10, 2014<br>
+          </div>
+          <div class="col-8">
+            An Introduction to Interactive Programming in Python<br>
+            Rice University
+          </div>
+          <div class="col-2">
+            Grade: 100% with Distinction
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer id="contact" class="pt-4 my-md-5 pt-md-5 border-top text-center">
+        <h1 class="display-4">Contact me</h1>
+        <p class="">
+          <a href="mailto:leesavage09@gmail.com" class="btn btn-outline-primary"><i
+              class="fas fa-envelope-square contact-icon"></i></a>
+          <a href="https://github.com/leesavage09/" class="btn btn-outline-primary"><i
+              class="fab fa-github-square contact-icon"></i></a>
+          <a href="https://linkedin.com/in/leesavage09" class="btn btn-outline-primary"><i
+              class="fab fa-linkedin contact-icon"></i></a>
+        </p>
+        <p class="lead">
+          Get in touch!
+        </p>
+      </footer>
     </div>
 
-    <div id="commercial_projects" class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h2 class="display-4">Commercial projects</h2>
-      <p class="lead">I consider myself an amateur developer with a few commercial projects. Apos being the big one for
-        my business and some smaller websites for friends and family. I look forward to learning to work as part of a
-        larger team as a professional developer.</p>
-      <div class="card-deck mb-3 text-center">
 
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">APOS</h4>
-          </div>
-          <div class="card-body">
-            <p>
-              This was the first feature-complete application I created. An Electronic Point Of Sale system for my
-              business Apache. Built-in Java with a Swin UI and ORM using Hibernate to an embedded Derby database.
-              Featuring a front end for a touch screen interaction, Hardware support for cash drawer and receipt
-              printing.
-              The back end built for mouse and keyboard.
-
-              Features include
-              Staff hour tracking
-              Products by Catagory, Department, Size Colour and other searchable metrics.
-              VAT and financial reports
-              security levels
-              Audit Trails
-              Product and sales reporting
-              End of day reporting
-              Cash reconciliation.
-              All other basic features you would expect from an EPOS system.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">LabourInVain.co.uk</h4>
-          </div>
-          <div class="card-body">
-            <p>This is a static website with no CMS. It is built from a bootstrap theme that has been heavily customised
-              with some new Javascript.</p>
-            <a type="button" href="http://www.labourinvainstivesholiday.co.uk/"
-              class="btn btn-lg btn-block btn-primary">Goto Site</a>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">dsbates.com</h4>
-          </div>
-          <div class="card-body">
-            <p>I created a custom bootstrap theme for this WordPress site. One feature is that the entire site is a
-              one-page design. Some "pages" are dynamically hidden and revealed by the menu to give the appearance of a
-              fast multi-page website. I created animations to help with the transitions between pages. Some simple
-              Javascript at the end of the page source controls this. I used PHP code in the theme to add extra
-              functionality to the back end CMS.</p>
-            <a href="http://dsbates.com/" type="button" class="btn btn-lg btn-block btn-primary">Go To Site</a>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Java database application</h4>
-          </div>
-          <div class="card-body">
-            <p>Built for a small business, a customer database to manage direct mail campaigns — Built-In Java with a
-              Swin
-              UI and Object-relational mapping using Hibernate to interface with an embedded Derby SQL database. The
-              main
-              features were customisable mail merges based on specific customer information and other time-sensitive
-              events.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-    <!--Education-->
-    <div id="education" class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Education</h1>
-      <p class="lead">
-        I am a passionate self-taught Developer. Mostly i undertake selflearning but have compleated a few online
-        courses.
-      </p>
-      <div class="row row-headings">
-
-        <div class="col-2">
-          <h5>Date</h5>
-        </div>
-        <div class="col-8">
-          <h5>School</h5>
-        </div>
-        <div class="col-2">
-          <h5>Grade</h5>
-        </div>
-      </div>
-
-      <div class="row rows">
-        <div class="col-2">
-          August 12, 2014<br>
-        </div>
-        <div class="col-8">
-          Principles of Computing<br>
-          Rice University
-        </div>
-        <div class="col-2">
-          Grade: 97.9% with Distinction
-        </div>
-      </div>
-
-      <div class="row rows">
-        <div class="col-2">
-          July 16, 2014<br>
-        </div>
-        <div class="col-8">
-          Functional Programming Principles in Scala<br>
-          École Polytechnique Fédérale de Lausanne
-        </div>
-        <div class="col-2">
-          Grade: 100% with Distinction
-        </div>
-      </div>
-
-      <div class="row rows">
-        <div class="col-2">
-          April 18, 2014<br>
-        </div>
-        <div class="col-8">
-          Computer Networks<br>
-          University of Washington
-        </div>
-        <div class="col-2">
-          Grade: 91.3%
-        </div>
-      </div>
-
-      <div class="row rows">
-        <div class="col-2">
-          January 10, 2014<br>
-        </div>
-        <div class="col-8">
-          An Introduction to Interactive Programming in Python<br>
-          Rice University
-        </div>
-        <div class="col-2">
-          Grade: 100% with Distinction
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="contact" class="pt-4 my-md-5 pt-md-5 border-top text-center">
-      <h1 class="display-4">Contact me</h1>
-      <p class="">
-        <a href="mailto:leesavage09@gmail.com" class="btn btn-outline-primary"><i class="fas fa-envelope-square contact-icon"></i></a>
-        <a href="https://github.com/leesavage09/" class="btn btn-outline-primary"><i class="fab fa-github-square contact-icon"></i></a>
-        <a href="https://linkedin.com/in/leesavage09" class="btn btn-outline-primary"><i class="fab fa-linkedin contact-icon"></i></a>
-      </p>
-      <p class="lead">
-        Get in touch!
-      </p>
-    </footer>
-  </div>
-
-
-  <!-- smooth-scroll minor updates and patch fixes within a major version -->
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]', { offset: 70 });
-  </script>
-  <!--scripts-->
-  <script src="js/scripts.js"></script>
+    <!-- smooth-scroll minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', { offset: 70 });
+    </script>
+    <!--scripts-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
