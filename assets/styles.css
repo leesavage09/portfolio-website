@@ -1,6 +1,7 @@
-html {
+  html {
     font-size: 14px;
   }
+
   @media (min-width: 768px) {
     html {
       font-size: 16px;
@@ -25,33 +26,22 @@ html {
   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 
-  .skill-icon {
-    font-size: 100px;
-    padding: 30px;
+  .project-image {
+    width:300px;
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
 
-  .typescript-image {
-    width: 160px;
-    height: 160px;
-    padding: 30px;
+  @media (min-width: 768px) {
+    .project-image {
+      width:300px;
+      float: right;
+      padding-left: 50px;
+    }
   }
-
-  .scala-image{
-    /* width: 100px; */
-    height: 100px;
-    padding: 20px 10px;
-    margin: 30px;
-    background-color:#212529;
-  }
-
-  .jquery-image {
-    height: 100px;
-  }
-
-  .tomcat-image {
-    height: 100px;
-  }
-
   .fixed {
     position: fixed;
     top: 0;
@@ -71,7 +61,7 @@ html {
   .appbutton {
     width: 60%;
     margin: auto;
-}
+  }
 
   .row-headings {
     border-width: 0 0 6px  0;
